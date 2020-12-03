@@ -21,11 +21,19 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{count}</Text>
-      <TouchableOpacity style={styles.button} onPress={increment}>
-        <Text style={styles.buttonText}>
-          Click Me!
-        </Text>
+       <CounterText fontSize={20} marginBottom={30} color="grey">
+        {count}
+      </CounterText>
+      <CounterText fontSize={40} marginBottom={20} color="lightblue">
+        {count}
+      </CounterText>
+      <CounterText fontSize={60} marginBottom={20} color="blue">
+        {count}
+      </CounterText>
+      <CounterText fontSize={80} color="navy">
+        {count}
+      </CounterText>
+    
       </TouchableOpacity>
       <Text style={styles.encouragingText}>{renderEncouragingText()}</Text>
       <TouchableOpacity style={styles.button} onPress={reset}>
